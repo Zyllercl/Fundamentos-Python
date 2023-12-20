@@ -8,8 +8,7 @@
     Integers    -> Numeros enteros
     Float       -> Numeros flotantes
     Boolean     -> Booleano (True - False)
-"""
-"""
+
     Diferencia de tipados
 
     Tipado Estático (Static Typed Languages) -> Se agrega un tipo de dato a una variable y solo se puede recibir valores de ese tipo.

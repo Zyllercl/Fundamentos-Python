@@ -14,7 +14,7 @@ mostrar_nombre(nombre)
 print(nombre.upper()) # Metodo para hacer todo en mayuscula
 print(nombre.title()) # Metodo para hacer la primera en mayuscula
 
-# Reto
+# Reto #
 
 # Funcion que imprime un mensaje
 def mensaje_bienvenida():

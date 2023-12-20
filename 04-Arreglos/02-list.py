@@ -1,5 +1,5 @@
 
-# Listas o Arreglos en Python
+# Listas o Arreglos en Python | Metodos
 
 # Variables
 lenguajes = ['Python', 'Kotlin', 'Java', 'JavaScript']

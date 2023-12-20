@@ -15,6 +15,7 @@
 
 # Condicional 'Mayor a'
 monto = 100
+
 if monto > 99:
     print('Tienes dinero')
 else:
