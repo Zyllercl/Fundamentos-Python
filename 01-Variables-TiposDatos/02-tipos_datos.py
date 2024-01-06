@@ -9,6 +9,8 @@
     Float       -> Numeros flotantes
     Boolean     -> Booleano (True - False)
 
+    type()      -> Obtener el tipo de variable
+
     Diferencia de tipados
 
     Tipado Estático (Static Typed Languages) -> Se agrega un tipo de dato a una variable y solo se puede recibir valores de ese tipo.
