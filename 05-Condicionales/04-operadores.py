@@ -4,6 +4,7 @@
 """
     Operador AND    -> Se deben cumplir todas condiciones
     Operador OR     -> Se debe cumplir al menos 1 condicion
+    Operador NOT    -> Invierte el valor de True/False y viceversa
 """
 
 usuario_autenticado = True
