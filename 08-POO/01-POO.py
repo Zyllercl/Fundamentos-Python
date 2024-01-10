@@ -15,6 +15,16 @@
     Metodo              -> Es una funcion que existe dentro de una Clase
 """
 
+# Definir una Clase Persona
+class Persona:
+    def __init__(self):
+        self.nombre = 'Mopa'
+        self.apellido = 'Chino'
+
+persona1 = Persona()
+print(persona1.nombre)
+print(persona1.apellido)
+
 # Definir una Clase
 class Restaurant:
     # Metodos
