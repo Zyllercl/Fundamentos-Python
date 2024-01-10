@@ -17,6 +17,7 @@
 
 # Definir una Clase Persona
 class Persona:
+    # Parametro self hace referencia a si mismo
     def __init__(self):
         self.nombre = 'Mopa'
         self.apellido = 'Chino'
