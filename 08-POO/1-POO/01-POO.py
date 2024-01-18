@@ -4,7 +4,7 @@
 """
     Cuando se define una clase deberás describir el comportamiento y forma de ese objeto
     El Objeto es la forma de referirse a la información creada por una clase (Instancia de una clase)
-    Cada instancia de la clse tendrá la misma "forma" pero diferente información
+    Cada instancia de la clase tendrá la misma "forma" pero diferente información
 
     Terminología
 
