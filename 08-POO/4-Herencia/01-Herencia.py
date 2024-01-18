@@ -2,7 +2,7 @@
 # Herencia
 
 """
-    Que es la Herencia?     -> La herencia consiste en que se puede crear una clase que sea 'hijo' o una 'copia' de otra, al heredad de una clase se tendra todos los 'metodos' y 'atributos' de la clase 'padre' en el hijo, y podras modificarlos en caso de ser necesario.
+    Que es la Herencia?     -> La herencia consiste en que se puede crear una clase que sea 'hijo' o una 'copia' de otra, al heredar de una clase se tendra todos los 'metodos' y 'atributos' de la clase 'padre' en el hijo, y podras modificarlos en caso de ser necesario.
 """
 
 # Definir una Clase
