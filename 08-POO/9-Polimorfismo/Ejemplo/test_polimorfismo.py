@@ -6,6 +6,10 @@ def imprimir_detalle(objeto):
     # print(objeto) # Llamada al objeto _str_
     print(type(objeto)) # Tipo de objeto
     print(objeto.mostrar_detalles())
+    
+    # Si un objeto al que se apunta es una instancia de cierta clase
+    if isinstance(objeto, Gerente):
+        print(objeto.departamento)
 
 # Creacion de empleado
 empleado = Empleado('Raven', 5000)
