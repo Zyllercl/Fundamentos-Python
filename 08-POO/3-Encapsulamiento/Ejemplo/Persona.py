@@ -21,6 +21,7 @@ class Persona:
         print('Obteniendo nombre...')
         return self._nombre
 
+    # Metodo set para cambiar el nombre
     @get_nombre.setter
     def set_nombre(self, nombre):
         print('Llamando metodo set')

@@ -11,7 +11,7 @@ class Persona:
         # Sobreescribiendo
         return f'Persona [Nombre: {self.nombre}, Edad: {self.edad}]'
 
-# Crear una clase hijo de restaurant
+# Crear una clase hijo de Persona
 class Empleado(Persona):
     def __init__(self, nombre, edad, sueldo):
         super().__init__(nombre, edad) # Accediendo a los metodos de la clase padre (Persona)

@@ -14,5 +14,3 @@ while numero <= 10:
     else:
         print(numero)
     numero += 1
-
-    

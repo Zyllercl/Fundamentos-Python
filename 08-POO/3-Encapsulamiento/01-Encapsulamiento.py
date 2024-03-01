@@ -14,7 +14,7 @@ class Restaurant:
         self.nombre = nombre # Atributo
         self.categoria = categoria
         self.__precio = precio # PROTECTED
- 
+        
     # Metodos
     def mostrar_informacion(self):
         print(f'Nombre: {self.nombre}, Categoria: {self.categoria}, Precio: {self.__precio}')
