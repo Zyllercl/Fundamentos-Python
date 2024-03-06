@@ -8,7 +8,7 @@ class CatalogoPeliculas:
     def agregar_pelicula(cls, pelicula):
         # Apertura del archivo
         with open(cls.ruta_archivo, 'a', encoding='utf8') as archivo:
-            archivo.write(f'{pelicula.get_nombre()}\n')
+            archivo.write(f'{pelicula.nombre}\n')
             # Una vez terminada la escritura se cierra el archivo
     
     @classmethod

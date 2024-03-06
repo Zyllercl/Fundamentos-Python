@@ -25,5 +25,6 @@ while opcion != 4:
         print('[ValueError] Ingrese un numero por favor!!!')
     except Exception as e:
         print(f'Ocurrio un error... {e}')
+        opcion = None
 else:
     print('Saliendo del programa...')
