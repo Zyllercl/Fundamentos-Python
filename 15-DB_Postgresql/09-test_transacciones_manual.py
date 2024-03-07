@@ -25,17 +25,31 @@ conexion = db.connect(
 # Crear conexion
 try:
     # Metodo Manual Transacciones
+    """ 
+    - Una transaccion ejecuta todas las sentencia si todas fueron correctas
+    - Las sentencia a utilizar en las transacciones son: INSERT | UPDATE | DELETE
     conexion.autocommit = False # No se realizan cambios en la db hasta terminar la transaccion
-    # conexion.autocommit = True # No recomendable ya que se guardaran los cambios en la db aun si hay errores
+    conexion.autocommit = True # No recomendable ya que se guardaran los cambios en la db aun si hay errore
+    
+    
+    """
+    # Inicio de la transaccion
+    conexion.autocommit = False
+    
+    # Insercion de un solo registro en la db
     cursor = conexion.cursor() # Inicializamos cursor
     sentencia = 'INSERT INTO persona(nombre, apellido, email) VALUES(%s, %s, %s)' # Sentencia SQL para insertar un nuevo registro
-    values = ('Mopa','Chino','mopa@mopa.cl') # Valores a la sentencia SQL anterior
+    values = ('Billy','Dawolf','billy@billy.cl') # Valores a la sentencia SQL anterior
     cursor.execute(sentencia, values) # Ejecucion de la sentencia SQL
     
-    sentencia = 'UPDATE persona SET nombre'
+    # Actualizacion de un solo registro en la db
+    sentencia = 'UPDATE persona SET nombre=%s, apellido=%s, email=%s WHERE id_persona=%s'
+    values = ('Jimy', 'Elkeso', 'elque@elque.cl', 9)
+    cursor.execute(sentencia, values)
     
-    conexion.commit() # Se actualizan los cambios en la db
-    print('[-] Terminando la transaccion...')
+    # Actualizacion de la base de datos
+    conexion.commit()
+    print('[-] Terminando la transaccion, se realizo un commit!')
 except Exception as e:
     conexion.rollback() # Roolback -> Devuelve los valores antes de la consulta SQL
     print(f'[ERROR] Hubo un problema, se hizo rollback de la transaccion: {e}')
