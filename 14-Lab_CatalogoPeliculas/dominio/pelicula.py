@@ -9,7 +9,7 @@ class Pelicula:
     # Metodo GET
     @property
     def nombre(self):
-        self._nombre
+        return self._nombre
     
     # Metodo SET
     @nombre.setter
