@@ -6,7 +6,7 @@
 * cd .venv\Scripts
 * activate
 > Actualizar entorno Virtual
-* python -m pip install --upgrade pi
+* python -m pip install --upgrade pip
 
 ### Configuracion para instalar Postgresql en entorno virtual
 > Instalacion de Psycopg2
