@@ -4,6 +4,11 @@ from cursor_db import Cursor
 
 
 class UsuarioDAO:
+    '''
+        DAO     -> Data Access Object para la tabla de usuario
+        CRUD    -> CREATE | READ | UPDATE | DELETE para la tabla de usuario
+    '''
+    
     # Variables Privadas sentencia SQL
     _SELECT = 'SELECT * FROM usuario ORDER BY id_usuario'
     _INSERT = 'INSERT INTO usuario(username, password) VALUES(%s, %s)'

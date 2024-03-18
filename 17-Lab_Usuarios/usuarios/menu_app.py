@@ -20,17 +20,17 @@ def app():
             # Tipos de opciones:
             if option == 1:
                 users_list = UsuarioDAO.db_select()
-                log.debug(f'[+] Listado de usuarios en la db: ')
+                log.info(f'[+] Listado de usuarios en la db: ')
                 
                 for user in users_list:
-                    log.debug(user)
+                    log.info(user)
             elif option == 2:
                 new_username = input('Nombre de usuario: ')
                 new_password = input('Contraseña de usuario: ')
                 
                 new_user = Usuario(username=new_username, password=new_password)
                 users_added = UsuarioDAO.db_insert(new_user)
-                log.debug(f'[+] Usuarios agregados con exito: {users_added}')
+                log.info(f'[+] Usuarios agregados con exito: {users_added}')
             elif option == 3:
                 id_user = int(input('ID usuario a modificar: '))
                 update_username = input('Actualizar usuario: ')
@@ -38,14 +38,14 @@ def app():
                 
                 update_user = Usuario(id_user, update_username, update_password)
                 users_updated = UsuarioDAO.db_update(update_user)
-                log.debug(f'[+] Usuarios actualizados con exito: {users_updated}')
+                log.info(f'[+] Usuarios actualizados con exito: {users_updated}')
             elif option == 4:
                 id_user = int(input('ID usuario a modificar: '))
                 user = Usuario(id_usuario=id_user)
                 users_deleted = UsuarioDAO.db_delete(user)
-                log.debug(f'[!] Usuarios eliminados: {users_deleted}')
+                log.info(f'[!] Usuarios eliminados: {users_deleted}')
             elif option == 5:
-                log.debug(f'[!] Saliendo del programa...')
+                log.info(f'[!] Saliendo del programa...')
                 break
         except ValueError as e:
             log.warning(f'[!] Solo puede ingresar numeros')
