@@ -1,16 +1,3 @@
-""" 
-    1.- Primero se debe crear un entorno virtual para manejar Postgresql
-        1.1.- Comando para crear un entorno virtual:
-            > python -m venv .venv
-        1.2.- Activar Entorno Virtual
-            > cd .venv\Scripts
-            > activate
-        1.3.- Actualizar en Entorno Virtual
-            > python -m pip install --upgrade pip
-    2.- Instalar Psycopg2
-        > python3 -m pip install psycopg2-binary
-"""
-
 import psycopg2 as db
 
 # Conexion a la Base de Datos Postgresql
