@@ -17,21 +17,19 @@
 # Sintaxis para definir una variable
 nombre_de_la_variable = valor
 
+# Obtener la pocision de memoria de una variable
+print(id(nombre_de_la_variable))
+
 # Declaración de variables y asignación de valores
 nombre = "Lord Stakes"   # Variable tipo Texto
 edad = 40                # Variable tipo entero
 peso = 70.4              # Variable tipo float
 es_casado = True         # Variable tipo boolean
 
-
-mensaje_nuevo = 'Hola Mundo'
-print(mensaje_nuevo)
-
-# Retos
-omam = 'Mountain Sound'
-print(omam)
+# Acceder a las variables
+print('Nombre:', nombre)
+print('Edad:', edad)
+print('Peso:', peso)
+print('Casado:', es_casado)
 
 
-# Obtener la pocision de memoria de una variable
-print(id(mensaje_nuevo))
-print(id(omam))
