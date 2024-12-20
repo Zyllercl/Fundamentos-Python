@@ -7,12 +7,14 @@
             - Sentencia 'if':   Permite ejecutar un bloque de código si la condición a evaluar es verdadera. Una condición es una expresión que evalua con True o False.
                 Ejemplo:
                     - Sintaxis sentencia if
+
                         if condicion: 
                             # Bloque de código que se ejecuta si la condición es True
 
             - Sentencia 'if else': Permite ejecutar un bloque de código cuando la condición del 'if' es falsa (False).
                 Ejemplo:
                     - Sintaxis sentencia if else
+
                         if condicion:
                             # Bloque de código que se ejecuta si la condición es True
                         else:
@@ -21,6 +23,7 @@
             - Sentencia 'if elif else': Abreviatura de 'elif' es 'else if', se utiliza para verificar múltiples condiciones, una tras otra.
                 Ejemplo:
                     - Sintaxis sentencia if elif else
+                    
                         if condicion1:
                             # Bloque de código que se ejecuta si la condición1 es True
                         elif condicion2:

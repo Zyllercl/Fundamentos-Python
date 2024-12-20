@@ -5,6 +5,7 @@
         - El operador ternario en Python es una forma compacta de agregar una condición, y el objetivo es asignar un valor a una variable dependiendo del valor de la condición.
             Ejemplo:
                 - Sintaxis Operador Ternario:
+                
                     resultado = valor_si_verdadero if condicion else valor_si_falso
 '''
 
