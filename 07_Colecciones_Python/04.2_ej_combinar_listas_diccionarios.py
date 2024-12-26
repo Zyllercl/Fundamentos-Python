@@ -5,9 +5,6 @@
         - Crear un rograma en donde se almacenen de una lista, diferentes diccionarios en su interior.
 '''
 
-from regex import P
-
-
 print(f'-----   COMBINACION DE LISTAS Y DICCIONARIOS   -----')
 # Variables
 personas = [
