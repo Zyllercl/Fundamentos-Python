@@ -12,5 +12,4 @@ def persona_mayusculas(nombre, apellido, edad):
 # Programa principal
 nombre, apellido, edad = persona_mayusculas('sansa', 'stark', 28)
 
-
 print(f'Resultado: Nombre = {nombre}, Apellido = {apellido}, Edad = {edad}')
