@@ -7,7 +7,7 @@
                 - Sintaxis operador asignación:
                     variable = valor
         
-        - En Python existe la asignación múltiple, es decir, permite asignar valores a varias variables en una sola línea de código. El código es más compracto y fácil de leer:
+        - En Python existe la asignación múltiple, es decir, permite asignar valores a varias variables en una sola línea de código. El código es más compacto y fácil de leer:
             Ejemplo:
                 - Sintaxis de asignación multiple:
                     variable1, variable2 = valor1, valor2

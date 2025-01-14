@@ -12,7 +12,7 @@ print(f'-----   SISTEMA BANCARIO   -----')
 salida_sistema = input('Deseas salir del sistema? (Si/No): ')
 salir_del_sistema = salida_sistema.strip().lower() == 'si'
 
-# Si NO deseas aslir del sistema, es decir, salir_de_sistema = False
+# Si NO deseas salir del sistema, es decir, salir_de_sistema = False
 if not salir_del_sistema:
     print('Continuamos dentro del sistema...')
 else:

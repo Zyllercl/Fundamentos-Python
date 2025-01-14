@@ -3,7 +3,7 @@
 
     Def:
         - La función randint() es parte de un módulo 'random' que permite generar números aleatorios.
-        - Para usar esta función, se debe importar el módulo, para ello se usa la siguiente sintaxtis:
+        - Para usar esta función, se debe importar el módulo, para ello se usa la siguiente sintaxis:
             -   import random               -> Importa todos los metodos y funciones de random
             -   from random import randint  -> Importa sólo la funcion randint()
 

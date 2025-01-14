@@ -21,8 +21,6 @@
 '''
 import random
 
-from click import style
-
 print('-----\tGENERADOR DE ID ÚNICO\t-----\n')
 
 # Variables
@@ -31,8 +29,8 @@ apellido= input('Ingrese su apellido: ')
 anho_nacimiento = input('Ingrese su fecha de nacimiento (YYYY): ')
 num_aleatorio = str(random.randint(0000,9999))
 
-nombre_id = nombre.strip().upper()[0:2]     # Toma los dos primeros valores, 0 y 1 (No considera la posición 2)
-apellido_id = apellido.strip().upper()[0:2] # Toma los dos primeros valores, 0 y 1 (No considera la posición 2)
+nombre_id = nombre.strip().upper()[0:2]             # Toma los dos primeros valores, 0 y 1 (No considera la posición 2)
+apellido_id = apellido.strip().upper()[0:2]         # Toma los dos primeros valores, 0 y 1 (No considera la posición 2)
 anho_nacimiento_id = anho_nacimiento.strip()[2:]    # Toma la posicion 2 hasta el final (4 posiciones máximo)
 
 id_unico = f'{nombre_id}{apellido_id}{anho_nacimiento_id}{num_aleatorio}'

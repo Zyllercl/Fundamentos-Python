@@ -6,7 +6,7 @@
             Ejemplos:
                 - Extracción de cadenas (Slicing)               # El Slicing (segmentación) permite indicar el índice de inicio y el índice final (sin incluir este último caracter).
 
-                - Buscar Subcadenas (find)                      # El método find() devuelve el índice de la priemra aparición de la subcadena. Si no encuentra la subcadena, devuelve un -1.
+                - Buscar Subcadenas (find)                      # El método find() devuelve el índice de la primera aparición de la subcadena. Si no encuentra la subcadena, devuelve un -1.
 
                 - Reemplazar Subcadenas (replace)               # El método replace() permite reemplazar una subcadena por otra dentro de una cadena principal.
 

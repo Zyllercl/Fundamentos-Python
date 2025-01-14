@@ -5,7 +5,7 @@
         - Python incluye varias maneras de concatenar cadenas, variables e incluso dar otro tipo de formateo.
             Ejemplos:
                 - Uso de f-string       # Formas mas eficiente de concatenar strings.
-                - Uso de método format  # Permite construir cadenas compleas.
+                - Uso de método format  # Permite construir cadenas complejas.
 '''
 
 '''     USO DE FORMATEO DE STRINGS    '''

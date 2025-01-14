@@ -11,7 +11,7 @@
                             |    False      |     False     |      False    |
                             |    False      |     True      |      False    |
                             |    True       |     False     |      False    |
-                            |    True       |     True      |      TRUE     |
+                            |    True       |     True      |      True     |
                 
                 - Operador Lógico OR:   Devuelve 'True' si cualquiera de los operandos es verdadero
 
