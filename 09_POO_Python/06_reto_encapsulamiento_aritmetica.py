@@ -52,9 +52,12 @@ if __name__ == '__main__':
     aritmetica.sumar()
 
     # Obteniendo el operando2 (GET)
-    print(f'[ORIGINAL] Operando 2: {aritmetica.operando2}')
+    print(f'[ORIGINAL] Operando 2 (metodo get): {aritmetica.operando2}\n')
 
-    # Cambiar el operando 2 (SET)
+    # Cambiar el operando 1 y 2 (SET)
+    aritmetica.operando1 = 99
     aritmetica.operando2 = 10
+    print('[!] Cambiando valores de los operandos...')
+    print(f'[MODIFICADO] Operando1: {aritmetica.operando1}')
     print(f'[MODIFICADO] Operando2: {aritmetica.operando2}')
     aritmetica.sumar()
