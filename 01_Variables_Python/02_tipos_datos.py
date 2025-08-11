@@ -1,43 +1,30 @@
-'''
-    TIPOS DE DATOS EN PYTHON
+"""
+Tipos de Datos en Python
+==========================
+Este script muestra ejemplos básicos de los tipos de datos más comunes en Python.
+"""
 
-    Def:
-        - Python es un lenguaje de tipado dinámico, no hay necesidad de indicar el 'tipo de variable' al momento de declararla.
-        
-        - Las variables pueden almacenar distintos tipos de valores, por ej:
-                - String        -> Cadena de texto
-                - Integer       -> Número Entero
-                - Float         -> Número Flotante
-                - Boolean       -> Booleano (True - False)
-                - None          -> Ausencia de valor (Vacio)
-                
-    Diferencia de Tipados:
-        - Tipado Estático (Static Typed Languages):
-            - Se agrega un tipo de dato a una variable y sólo se puede recibir valores de ese tipo.
-                Ejemplo: 
-                    - int edad = 20 -> La variable edad solo podra recibir valores numericos
+# ------------------------------
+# Ejemplos de tipos de datos
+# ------------------------------
 
-        - Tipado Dinámico (Dynamically Typed Languages):
-            - Una variable puede contener cualquier tipo de dato y re asignarse diferentes valores.
-                Ejemplo:
-                    - edad = 20
-                    - edad = "Python"
-'''
-
-'''     TIPO DE DATOS    '''
-# String
-nombre = "Tiwyn"
+# str: cadena de texto
+nombre = "Tinky Winky"
 print('Nombre:', nombre)
-# Integer
+
+# int: número entero
 edad = 20
 print('Edad:', edad)
-# Float
+
+# float: número decimal
 peso = 30.67
 print('Peso:', peso)
-# Boolean
-es_casado = True
-print('Casado:', es_casado)
-# None
+
+# bool: valor lógico (True/False)
+es_verdad = True
+print('Es verdad?:', es_verdad)
+
+# NoneType: ausencia de valor
 altura = None
 print('Altura:', altura)
 

@@ -1,66 +1,57 @@
-'''
-    VARIABLES EN PYTHON
+"""
+Uso de Variables en Python
+==========================
+Este script demuestra:
+- Cómo declarar y asignar  valores a variables.
+- Cómo acceder y modificar sus valores.
+- Reglas y convenciones para nombres en Python.
+"""
 
-    Def:
-        - Una variable en Python es un nombre que almacena un valor guardado en la memoria temporal del PC. 
-        - Las variables en Python son dinámicas, es decir, que pueden almacenar cualquier tipo de valores como por ejemplo: Texto, números enteros, decimales, booleanos, listas, etc.
-
-    Variables y la Memoria RAM:     
-        - En Python, cada vez que se crea una variable y le asignamos un valor, estamos reservando espacio en memoria RAM.
-        - Las variables no pueden comenzar con números, no se pueden usar palabras reservadas (Keyword) como por ej: for, if, class, try, etc.
-        - Python es case sensitive, es decir, que hace la diferencia entre variables declaradas con mayúsculas y minusculas por ej: 'mi_nombre' es diferente a 'Mi_nombre'
-
-    Tipos de declaración de Variables:
-        - mensajeNuevo    -> camelCase
-        - MensajeNuevo    -> Pascal Case
-        - nombrenuevo     -> Falt Case
-        - nombre-nuevo    -> Kebab Case
-        - nombre_nuevo    -> Snake Case [*] 'Es recomendable usar esta opcion en terminos de convención y buenas practicas'
-'''
-
-'''     USO DE VARIABLES    '''
-# Sintaxis para definir una variable
+# Ejemplo básico: declaración y valor de una variable
 nombre_de_la_variable = 'valor'
-
-# Obtener la pocision de memoria de una variable
 print('Posición de Memoria:', id(nombre_de_la_variable))
 
-# Declaración de variables y asignación de valores
-nombre = "Lord Stark"   # Variable tipo Texto
-edad = 40               # Variable tipo Entero
-peso = 70.4             # Variable tipo Float
-es_casado = True        # Variable tipo Boolean
+# ------------------------------
+# Declaración de variables
+# ------------------------------
+nombre = "Pepe"         # str:  Texto
+edad = 18               # int:  Entero
+peso = 70.4             # float: Número decimal
+es_casado = False       # Bool: Verdadero/Falso
 
-# Acceder a las variables
+# Mostrar valores originales
 print('\nValores Originales')
 print('Nombre:', nombre)
 print('Edad:', edad)
 print('Peso:', peso)
 print('Casado:', es_casado)
 
-# Modificar el valor de una variable
-nombre = "Daerys Targaryen"
-edad = 30
+# ------------------------------
+# Modificación de variables
+# ------------------------------
+nombre = "Pepito Jr"
+edad = 10
 
-# Acceder a las variables
 print('\nValores Modificadas')
 print('Nombre:', nombre)
 print('Edad:', edad)
 
-'''     REGLAS Y CONVENCIONES    '''
-# Reglas y Convenciones en nombres de variables
+# ------------------------------
+# Reglas y convenciones
+# ------------------------------
 print('\nReglas y Convenciones')
-nombre_usuario = "Usuario 1"
-# 1nombre_usuario = "Usuario 1" <- [ERROR] No se puede crear una variable con un numero al principio.
-# class = "Usuario"             <- [ERROR] No se puede crear una variable con un nombre reservado (class).
 
-# Case Sensitive
+nombre_usuario = "Usuario 1" # snake_case: Recomendado
+
+# ❌ Ejemplos inválidos:
+# 1nombre_usuario = "Usuario 1" -> [ERROR] No se puede crear una variable con un numero al principio.
+# class = "Usuario"             -> [ERROR] No se puede usar palabras reservadas.
+
+# Python distingue entre mayúsculas y minúsculas (case-sensitive)
 nombre = "Usuario 1"
 Nombre = "Usuario 2"
-
 print('La variable "nombre" es:', nombre, ', es diferente de "Nombre":', Nombre)
 
-# Prefijos y Subfijos
-es_casado = False           # Corresponde a un prefijo, es decir, 'es_xxxx' hace alusion a una variable Booleana
-nombre_txt = "archivo.txt"  # Corresponde a un subfijo, es decir, xxxx_txt hace alusion a una variable que guarda un archivo tipo 'txt'
-
+# Prefijos y Subfijos en nombres de variables
+es_casado = False           # Prefijo "es_" sugiere que es un valor booleano.
+nombre_txt = "archivo.txt"  # Sufijo "_txt" indica el tipo de dato o formato.
