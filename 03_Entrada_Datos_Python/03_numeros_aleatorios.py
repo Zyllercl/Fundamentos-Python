@@ -1,23 +1,23 @@
-'''
-    GENERAR NUMEROS ALEATORIOS
+"""
+Uso de Números Aleatorios en Python
+===================================
+Este script muestra cómo generar números aleatorios y simular el lanzamiento de un dado en Python.
+"""
 
-    Def:
-        - La función randint() es parte de un módulo 'random' que permite generar números aleatorios.
-        - Para usar esta función, se debe importar el módulo, para ello se usa la siguiente sintaxis:
-            -   import random               -> Importa todos los metodos y funciones de random
-            -   from random import randint  -> Importa sólo la funcion randint()
-
-            Ejemplo:
-                - randint(a,b)  -> Devuelve un número aleatorio entre 'a' y 'b', incluyendo estos valores.
-        
-'''
-
-'''     USO DE RANDOM (NUMEROS ALEATORIOS)    '''
+# -------------------------------------
+# Generación de Números Aleatorios
+# -------------------------------------
 from random import randint
 
+# -------------------------------------
+# Generar un número aleatorio entre 1 y 10
+# -------------------------------------
 num_aleatorio = randint(1,10)
 print(f'Numero aleatorio (entre 1 y 10): {num_aleatorio}')
 
-'''     SIMULACIÓN DE UN DADO    '''
+
+# -------------------------------------
+# Simulación de lanzamiento de un dado
+# -------------------------------------
 dado = randint(1,6)
 print(f'Resultado al lanzar el dado: {dado}')
