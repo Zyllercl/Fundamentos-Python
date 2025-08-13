@@ -1,32 +1,38 @@
-'''
-    METODOS DE STRINGS
+"""
+Uso de Métodos de Strings en Python
+===================================
+Este script muestra de cómo utilizar algunos métodos comunes de strings en Python para manipular y obtener información de cadenas de texto.
+"""
 
-    Def:
-        - Los strings en Python vienen con métodos utiles que facilitan su manipulación.
-            Ejemplos:
-                - Uso de upper():   Cambia las letras a mayúsculas.
-                - Uso de lower():   Cambia las letras a minúsculas.
-                - Uso de strip():   Elimina espacios en blanco al inicio y al final de una cadena.
-                - Uso de len():     Obtener el largo de una cadena, tambien funciona para cadenas, listas, etc.
-'''
+# ------------------------------------------------------
+# Ejemplo de uso de métodos de strings
+# ------------------------------------------------------
 
-'''     USO DE METODOS DE STRINGS    '''
+# Variable original tipo STR
 variable_original = 'Hola Mundo'
 print(f'Variable Original: {variable_original}')
 
-# Método upper()
+# ------------------------------------------------------
+# Método upper(): convierte a mayúsculas
+# ------------------------------------------------------
 mayusculas = variable_original.upper()
-print(f'Uso de Upper: {mayusculas}')
+print(f'Uso de upper(): {mayusculas}')
 
-# Método lower()
-print(f'Uso de Lower: {variable_original.lower()}')
+# ------------------------------------------------------
+# Método lower(): convierte a minúsculas
+# ------------------------------------------------------
+print(f'Uso de lower(): {variable_original.lower()}')
 
-# Méteodo Strip()
-variable_editada = '    Hola Mundo'
-print(f'Variable Editada: {variable_editada}')
-print(f'Uso de Strip: {variable_editada.strip()}\n')
+# ------------------------------------------------------
+# Método strip(): elimina espacios al inicio y al final
+# ------------------------------------------------------
+variable_editada = '    Hola Pepe'
+print(f'Variable con espacios: {variable_editada}')
+print(f'Uso de strip(): {variable_editada.strip()}\n')
 
-# Método len()
-cadena_original = 'Hola, Mundo!'
-print(f'String Original: {cadena_original}')
-print(f'Largo del string: {len(cadena_original)}')
+# ------------------------------------------------------
+# Método len(): obtiene la longitud de la cadena
+# ------------------------------------------------------
+variable_nueva = 'Hola, Mundo!'
+print(f'Variable nueva: {variable_nueva}')
+print(f'Largo de la variable nueva: {len(variable_nueva)}')

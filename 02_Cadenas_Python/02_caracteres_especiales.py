@@ -1,19 +1,16 @@
-'''
-    CARACTERES ESPECIALES EN CADENAS
+"""
+Uso de Caracteres Especiales en Python
+======================================
+En Python, las cadenas pueden incluir caracteres especiales usando la barra invertida (\) seguida de un caracter específico.
+Estos se utilizan para insertar saltos de línea, tabulaciones, comillas dentro de cadenas, entre otros.
+"""
 
-    Def:
-        - Las cadenas pueden incluir caracteres especiales. Estos caracteres se introducen usando el caracter de 'diagonal invertida (\)'
-            Ejemplos:
-                - Nueva Linea:      \n      # Inserta un salto de linea
-                - Tabulacion:       \t      # Inserta un tabulador horizontal (útil para alinear texto)
-                - Comilla Simple:   \'      # Incluye comillas simples en una cadena delimitada por comillas simples
-                - Comilla Doble:    \"      # Incluye comillas dobles en una cadena delimitada por comillas dobles
-                - Barra Invertida:  \\      # Incluye una barra invertida en la cadena
-'''
+# ----------------------------------------
+# Ejemplo de uso de caracteres especiales
+# ----------------------------------------
 
-'''     USO DE CARACTERES ESPECIALES    '''
-print('Hola \nMundo')   # Salto de linea
-print('\tHola Mundo')   # Tabulador
-print('Hola \' Mundo')  # Comilla Simple
+print("\nHola \nMundo")   # Salto de línea
+print("\tHola Mundo")   # Tabulación
+print('Hola \' Mundo')  # Comillas simples
 print('Hola \" Mundo')  # Comilla Doble
 print('Hola \\ Mundo')  # Barra Invertida

@@ -1,20 +1,19 @@
-'''
-    CONCATENACION DE STRINGS
+"""
+Uso de Concatenación de Strings en Python
+=========================================
+Este script muestra cómo concatenar cadenas de texto en Python.
+"""
 
-    Def:
-        - La concatenación de strings permite combinar dos o más cadenas para formar una nueva cadena.
-            Ejemplos:
-                - Operador +        # Concatenación directa al momento de agregar un + entre dos string
-                - Operador JOIN     # Permite unir tantas cadenas sea necesario. Se necesita pasar cada string a concatenar separado por coma y entre parentesis
-'''
+# -------------------------------------
+# Ejemplo de uso de concatenación
+# -------------------------------------
 
-'''     USO DE CONCATENACION    '''
 # Operador +
 string_1 = "Hola"
 string_2 = "Mundo"
 concatenacion = string_1 + ' ' + string_2
 print('Uso de Operador +:', concatenacion)
 
-# Operador JOIN
+# Operador join()
 concatenacion = ''.join([string_1, ' ', string_2])
 print('Uso de Operador JOIN:', concatenacion)

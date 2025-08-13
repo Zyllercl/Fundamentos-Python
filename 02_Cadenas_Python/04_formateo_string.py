@@ -1,20 +1,19 @@
-'''
-    FORMATEO DE STRINGS
+"""
+Uso de Formateo de Strings en Python
+====================================
+Este script muestra cómo formatear cadenas combinando texto y variables de diferentes maneras.
+"""
 
-    Def:
-        - Python incluye varias maneras de concatenar cadenas, variables e incluso dar otro tipo de formateo.
-            Ejemplos:
-                - Uso de f-string       # Formas mas eficiente de concatenar strings.
-                - Uso de método format  # Permite construir cadenas complejas.
-'''
-
-'''     USO DE FORMATEO DE STRINGS    '''
-# Uso de f-string
-variable = "Mundo"
+# -------------------------------------
+# Ejemplo de uso de f-string
+# -------------------------------------
+variable = "Pepe"
 resultado = f'Hola {variable}'
 print(resultado)
 
-# Uso de Método Format
-variable = "Mundo"
+# -------------------------------------
+# Ejemplo de uso de método format()
+# -------------------------------------
+variable = "Pepito"
 resultado = 'Adios {}'.format(variable)
 print(resultado)
