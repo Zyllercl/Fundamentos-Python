@@ -1,47 +1,59 @@
-'''
-    OPERADORES ARITMETICOS
+"""
+Uso de Operadores Aritméticos en Python
+=======================================
+Este script muestra cómo utilizar operadores aritméticos básicos en Python.
+"""
 
-    Def:
-        - Los operadores aritméticos permiten realizar cálculos matemáticos básicos entre números como:
-            
-            - Suma  (+):            Suma de dos operandos.
-            - Resta (-):            Resta de dos operandos.
-            - Multiplicacion (*):   Múltiplica dos operandos.
-            - Disivión  (/):        Divide el primer operando entre el segundo (Tipo Flotante).
-            - División Entera (//): Divide el primer operando entre el segundo (Tipo Entero).
-            - Módulo (%):           Regresa el residuo de una división.
-            - Exponente (**):       Eleva el primer operando a la potencia del segundo.
-'''
+# ----------------------------------
+# Ejemplo de uso de operadores aritméticos
+# ----------------------------------
 
-'''     USO DE OPERADORES ARITMETICOS    '''
-# Variables
+
+# -------------------------
+# Variables Globales
+# -------------------------
 a = 16
 b = 3
+print(f'Variables Iniciales:\n a: {a}\n b: {b}\n')
 
+# -------------------------------------
 # Operador Suma
+# -------------------------------------
 suma = a + b
-print(f'Suma: {suma}')
+print(f'Suma (a + b): {suma}')
 
+# -------------------------------------
 # Operador Resta
+# -------------------------------------
 resta = a - b
-print(f'Resta: {resta}')
+print(f'Resta (a - b): {resta}')
 
-# Operador Multiplicador
+# -------------------------------------
+# Operador Multiplicación
+# -------------------------------------
 multiplicacion = a * b
-print(f'Multiplicacion: {multiplicacion}')
+print(f'Multiplicación (a * b): {multiplicacion}')
 
-# Operador Division (2 decimales)
+# -------------------------------------
+# Operador División (2 decimales)
+# -------------------------------------
 division = a / b
-print(f'Disivion: {division:.2f}')
+print(f'División (a / b): {division:.2f}')
 
-# Operador Division Entera
+# -------------------------------------
+# Operador División Entera
+# -------------------------------------
 division_entera = a // b
-print(f'Division entera: {division_entera}')
+print(f'División entera (a // b): {division_entera}')
 
+# -------------------------------------
 # Operador Módulo
+# -------------------------------------
 modulo = a % b
-print(f'Residuo disivion: {modulo}')
+print(f'Residuo de la división (a % b): {modulo}')
 
+# -------------------------------------
 # Operador Potencia
-potencia = a ** b # A elevado a B
-print(f'Potencia: {potencia}')
+# -------------------------------------
+potencia = a ** b
+print(f'Potencia (a ** b): {potencia}')

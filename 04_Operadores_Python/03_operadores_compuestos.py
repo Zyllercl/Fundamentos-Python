@@ -1,35 +1,44 @@
-'''
-    OPERADORES DE ASIGNACION COMPUESTOS
+"""
+Uso de Operadores de Asignación Compuestos en Python
+====================================================
+Este script muestra cómo utilizar los operadores de asignación compuestos en Python.
+"""
 
-    Def:
-        - Los operadores de asignación compuestos combinan una operación aritmética con una asignación.
-            Ejemplo:
-                - Sintaxis operador asignación compuestos:
-                    variable OPERADOR= valor
-'''
+# ----------------------------------
+# Ejemplo de uso de Operadores de Asignación Compuestos
+# ----------------------------------
 
-'''     USO DE OPERADORES DE ASIGNACION COMPUESTOS    '''
-# Variables
+# ------------------------------
+# Variables Globales
+# ------------------------------
 a, b = 7, 2
-print(f'Variables Iniciales:\n a: {a}\n b: {b}')
+print(f'Variables Iniciales:\n a: {a}\n b: {b}\n')
 
-# Operador Compuesto de Suma ( += )
+# ------------------------------
+# Ejemplo de Operador Compuesto de Suma ( += )
+# ------------------------------
 print(f'-----   Operador Compuesto Suma   -----')
 a += b
 print(f'Operador compuesto a += b es: {a}\n')
 
-# Operador Compuesto de Resta ( -= )
+# ------------------------------
+# Ejemplo de Operador Compuesto de Resta ( -= )
+# ------------------------------
 print(f'-----   Operador Compuesto Resta   -----')
 a -= b
 print(f'Operador compuesto a -= b es: {a}\n')
 
-# Operador Compuesto de Multiplicación ( *= )
+# ------------------------------
+# Ejemplo de Operador Compuesto de Multiplicación ( *= )
+# ------------------------------
 print(f'-----   Operador Compuesto Multiplicación   -----')
 a = 9
 a *= b
 print(f'Operador compuesto a *= b es: {a}\n')
 
-# Operador Compuesto de División ( /= )
+# ------------------------------
+# Ejemplo de Operador Compuesto de División ( /= )
+# ------------------------------
 print(f'-----   Operador Compuesto División   -----')
 a = 7
 a /= b

@@ -1,38 +1,3 @@
-'''
-    OPERADORES LOGICOS
-
-    Def:
-        - Los operadores lógicos se utilizan para realizar operaciones lógicas con valores booleados.
-            Ejemplo:
-                - Operador Lógico AND:  Devuelve 'True' si ambos oparendos son verdaderos
-
-                                        TABLA DE LA VERDAD (AND)
-                            |       a       |       b       |     a and b   |
-                            |    False      |     False     |      False    |
-                            |    False      |     True      |      False    |
-                            |    True       |     False     |      False    |
-                            |    True       |     True      |      True     |
-                
-                - Operador Lógico OR:   Devuelve 'True' si cualquiera de los operandos es verdadero
-
-                                        TABLA DE LA VERDAD (OR)
-                            |       a       |       b       |     a or b   |
-                            |    False      |     False     |      False   |
-                            |    False      |     True      |      True    |
-                            |    True       |     False     |      True    |
-                            |    True       |     True      |      True    |
-
-                - Operador Lógico NOT:  Invierte el valor del operando (operador unario)
-
-                                        TABLA DE LA VERDAD (NOT)
-                                    |       a        |    not a    |
-                                    |    False       |     True    |
-                                    |    True        |     False   |
-                                    
-                    - Sintaxis Operador NOT
-                        exp1 = False
-                        print(not exp1) -> TRUE
-'''
 
 '''     USO DE OPERADORES LOGICOS   '''
 # Operador Lógico AND

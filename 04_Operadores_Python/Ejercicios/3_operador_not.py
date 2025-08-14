@@ -1,12 +1,21 @@
-'''
-    GENERACION TICKET VENTA
+"""
+Generador de ticket de venta con descuento e impuestos
+======================================================
 
-    Def:
-        - El sistema necesita el precio de cada producto adquirido en donde el usuario deberá ingresarlos manualmente. Posteriormente se debera imprimir por consola la suma de cada producto junto con el impuesto.
-'''
+Definición:
+-----------
 
-print(f'-----   GENERACION TICKET    -----')
-# Variables
+Un sistema de venta necesita calcular el total de una compra incluyendo impuestos y descuentos. El usuario debe ingresar el precio de cada producto adquirido, y si se aplica un descuento, este se calcula sobre el total neto antes de impuestos. Finalmente, se imprime el total a pagar incluyendo los impuestos correspondientes.
+"""
+
+# ---------------------------
+# Ejemplo de uso del operador NOT
+# ---------------------------
+print(f'[SISTEMA DE VENTA CON DESCUENTO E IMPUESTOS]\n')
+
+# ---------------------------
+# Entrada de datos
+# ---------------------------
 IMPUESTO = 0.19
 precio_pan = float(input('Precio Pan: '))
 precio_tomate = float(input('Precio Tomate: '))
