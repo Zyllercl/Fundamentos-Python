@@ -7,9 +7,10 @@ Definición:
 
 Crear un programa que ofrezca descuentos dependiendo del monto ingresado.
 Considerar los siguientes puntos:
-1. Si el valor es más de $15.000 y tiene membresía en la tienda (Descuento de 10%)
-2. Si sólo tiene membresía en la tienda (Descuento de 5%)
-3. Si no es miembro y compró menos de $15.000 (Descuento de 0%)
+    
+    1. Si el valor es más de $15.000 y tiene membresía en la tienda (Descuento de 10%)
+    2. Si sólo tiene membresía en la tienda (Descuento de 5%)
+    3. Si no es miembro y compró menos de $15.000 (Descuento de 0%)
 """
 
 # -----------------------------
