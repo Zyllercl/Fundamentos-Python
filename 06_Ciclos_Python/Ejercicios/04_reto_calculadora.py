@@ -1,31 +1,43 @@
-'''
-    APLICACION CALCULADORA
+"""
+RETO: Aplicación Calculadora
+============================
 
-    Def:
-        - Crear un programa similar a una calculadora con las siguientes opciones:
-            1.- Suma
-            2.- Resta
-            3.- Multiplicación
-            4.- División
-            5.- Salir
-'''
+Definición:
+-----------
 
-print(f'-----   CALCULADORA INTELIGENTE   -----')
-# Variables
+Crear un programa similar a una calculadora con las siguientes opciones:
+
+    1. Suma
+    2. Resta
+    3. Multiplicación
+    4. División
+    5. Salir
+"""
+
+print(f'[RETO] Aplicación Calculadora\n')
+
+# Variables Locales
 salir = False
 
+# ---------------------
+# Ciclo WHILE: Si 'salir' es False, el ciclo continua
+# ---------------------
 while not salir:
-    print(f'''Selecciona una opción:
-    1.- Suma
-    2.- Resta
-    3.- Multiplicación
-    4.- División
-    5.- Salir
+    print(f'''\n[Menu Calculadora]:
+    1. Suma
+    2. Resta
+    3. Multiplicación
+    4. División
+    5. Salir
     ''')
 
     opcion = int(input('Ingrese una opción: '))
 
-    # Suma
+    # -------------------
+    # Evaluacion de la opción seleccionada por el usuario
+    # -------------------
+
+    # Opcion 1: SUMA
     if opcion == 1:
         numero_1 = int(input('Ingrese el numero 1: '))
         numero_2 = int(input('Ingrese el numero 2: '))
@@ -33,7 +45,7 @@ while not salir:
         suma = numero_1 + numero_2
 
         print(f'\nLa suma de ({numero_1} + {numero_2}) es: {suma}\n')
-    # Resta
+    # Opcion 2: RESTA
     elif opcion == 2:
         numero_1 = int(input('Ingrese el numero 1: '))
         numero_2 = int(input('Ingrese el numero 2: '))
@@ -41,7 +53,7 @@ while not salir:
         resta = numero_1 - numero_2
 
         print(f'\nLa resta de ({numero_1} - {numero_2}) es: {resta}\n')
-    # Multiplicacion
+    # Opcion 3: MULTIPLICACION
     elif opcion == 3:
         numero_1 = int(input('Ingrese el numero 1: '))
         numero_2 = int(input('Ingrese el numero 2: '))
@@ -49,7 +61,7 @@ while not salir:
         multiplicacion = numero_1 * numero_2
         
         print(f'\nLa multiplicación de ({numero_1} * {numero_2}) es: {multiplicacion}\n')
-    # Division
+    # Opcion 4: DIVISION
     elif opcion == 4:
         numero_1 = int(input('Ingrese el numero 1: '))
         numero_2 = int(input('Ingrese el numero 2: '))
@@ -59,7 +71,7 @@ while not salir:
         else:
             division = numero_1 / numero_2
             print(f'\nLa division de ({numero_1} / {numero_2}) es: {division}\n')
-    # Salir
+    # Opcion 5: SALIR
     elif opcion == 5:
         print('Cerrando calculadora...\n')
         salir = True
