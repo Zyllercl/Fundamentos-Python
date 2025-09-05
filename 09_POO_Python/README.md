@@ -126,7 +126,7 @@ self.__nombre    # Atributo Privado
 - No se debe modificar directamente atributos protegidos o privados desde fuera de la clase.
 - Para crear atributos de **sólo lectura** (read only), se omite el **método setter**.
 
-### 🔹 Ejemplo de los Métodos GET y SET
+### 🔹 Ejemplo de los Métodos GET y SET [BÁSICO]
 ```python
 class Persona:
     def __init__(self):
@@ -139,6 +139,27 @@ class Persona:
     # Setter
     def set_nombre(self, nombre):
         self.__nombre = nombre
+```
+
+### 🔹 Ejemplo de los Métodos GET y SET [RECOMENDADO]
+```python
+class Persona:
+    def __init__(self):
+        self._nombre = ''  # Atributo protegido
+    
+    # -----------------------
+    # Decorador @property: Es una propiedad de la Clase.
+    # ----------------------- 
+    @property
+    def nombre(self):
+        return self._nombre
+    
+    # -----------------------
+    # Decorador @{atributo}.setter: Es una propiedad de la Clase, consiste en cambiar un atributo dentro de una clase.
+    # ----------------------- 
+    @nombre.setter
+    def set_nombre(self, nombre):
+        self._nombre = nombre
 ```
 
 ### 🔹 Beneficios del Encapsulamiento
