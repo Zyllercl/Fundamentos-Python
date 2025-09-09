@@ -105,21 +105,23 @@ hex(id(variable))
 | Protegido | `_nombre` | Accesible sólo desde la clase y sus subclases. **NO se puede alterar el valor de la variable.** |
 | Privado | `__nombre` | Accesible sólo desde dentro de la clase |
 
-### 🔹 Características del Encapsulamiento
+### 🔹 Niveles de Protección de Atributos
+| Tipo | Sintaxis | Descripción |
+|------|----------|-------------|
+| Protegido | `self._nombre` | Un guion bajo. Indica que no debería accederse desde fuera de la clase |
+| Privado | `self.__nombre` | Doble guion bajo. Solo puede accederse desde dentro de la clase |
 
-1. **Atributos Protegidos o Privados**
-```python
-self._nombre     # Atributo Protegido 
-self.__nombre    # Atributo Privado
-```
+> **Nota**: En Python, la protección es por convención. El guion bajo es una señal para otros desarrolladores de cómo deberían usarse los atributos.
 
-2. **Métodos Get y Set**
-- `GET`: Para obtener/recuperar información de una variable.
-- `SET`: Para modificar/cambiar información de una variable.
+### 🔹 Métodos y Decoradores
+| Método | Definición | Decorador |
+|--------|------------|-----------|
+| GET | Obtener/recuperar información de una variable | `@property` |
+| SET | Modificar/cambiar información de una variable | `@nombre.setter` |
 
-3. **Decoradores:**
-- `@property`: Permite acceder al valor como si fuera un atributo, es decir, a traves de un método.
-- `@setter`: Permite modificar el valor de la variable.
+> **Nota**: Los decoradores permiten modificar el comportamiento de los métodos:
+> - `@property`: Convierte un método en un atributo de sólo lectura
+> - `@nombre.setter`: Permite modificar el valor del atributo protegido
 
 `Notas importantes:`
 - Los métodos GET y SET solo son necesarios para acceder a atributos desde fuera de la clase.
@@ -204,7 +206,7 @@ def __init__(self, atributo_instancia):
 
 ## 📌 5. Métodos de Clase
 > **Definición:**
-> Son funciones que se definen dentro de una clase y están diseñadas para trabajar con los atributos y objetos de dicha clase.
+> - Son funciones que se definen dentro de una clase y están diseñadas para trabajar con los atributos y objetos de dicha clase.
 
 ### 🔹 Tipos de Métodos
 
@@ -232,4 +234,36 @@ class Persona:
         return cls.contador_personas
 ```
 
-**Nota**: Se recomienda usar `@classmethod` cuando se necesita acceder o modificar atributos de clase, ya que proporciona una referencia a la clase mediante el parámetro
+**Nota**: Se recomienda usar `@classmethod` cuando se necesita acceder o modificar atributos de clase, ya que proporciona una referencia a la clase mediante el parámetro **cls**
+
+---
+
+## 📌 6. Herencia
+> **Definición:**
+> - La **Herencia** en Python es un mecanismo de la **POO** que permite que una **clase hija** (o **subclase**) herede atributos y métodos de otra **clase padre** (o **superclase**).
+> - Permite reutilizar código y expandir de funcionalidades sin duplicar la lógica.
+
+### 🔹 Conceptos Clave en Herencia
+
+| Concepto            | Descripción |
+|---------------------|-------------|
+| **Clase Padre**     | También llamada **superclase**: proporciona atributos y métodos que la clase hija puede reutilizar. |
+| **Clase Hija**      | También llamada **subclase**: hereda de la clase padre y puede extender o modificar sus comportamientos. |
+| **Herencia Simple** | La clase hija hereda de una única clase padre. |
+| **Herencia Múltiple** | La clase hija hereda de más de una clase padre. |
+| **Sobrescritura (Override)** | Cuando una clase hija redefine un método heredado de la clase padre para cambiar su comportamiento. |
+| **`super()`**       | Permite invocar métodos de la clase padre desde la clase hija sin referirse directamente al nombre de la clase padre. |
+
+---
+
+## 📌 7. Polimorfismo
+> **Definición:**
+> - El **Polimorfismo** permite que objetos de diferentes clases respondan de forma distinta a la **misma llamada de método o función**. Esto promueve la flexibilidad, mantenibilidad y reutilización del código.
+
+###  🔹 Conceptos Clave en Polimorfismo
+
+| Concepto                       | Descripción |
+|--------------------------------|-------------|
+| **Polimorfismo**               | Capacidad de que una misma interfaz (método, función u operador) se comporte de forma distinta según la clase del objeto que lo utiliza. ||
+| **Duck Typing**                | En Python, si un objeto tiene el método esperado, se considera compatible sin importar su tipo concreto. |
+| **Polimorfismo con Operadores** | Operadores como `+`, `len()` u otros métodos mágicos (`__add__`, etc.) pueden comportarse diferente según el tipo de objeto. |
