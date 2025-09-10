@@ -21,9 +21,19 @@ class Animal:
 # Creación de Clase Hija (Subclase)
 # --------------------------------
 class Perro(Animal):
+    # --------------------------------
+    # Métodos de la Clase Hija
+    # --------------------------------
     def hacer_sonido(self):
         print(f'Guau Guau')
-    
+
+    # --------------------------------
+    # Sobreescritura (Override)
+    # --------------------------------
+    # Sobreescritura del Método dormir() (El nuevo método se debe llamar igual al método Padre)
+    def dormir(self):
+        print(f'Duermo 10 horas al día')
+
 # --------------------------------
 # Testing Herencia
 # --------------------------------
@@ -39,5 +49,5 @@ print(f'\n[CLASE HIJA - MÉTODOS]')
 perro_1 = Perro()
 # Métodos de la Clase Padre e Hija
 perro_1.comer()
-perro_1.dormir()
+perro_1.dormir()    # Se llama el método sobreescrito en la Clase Hija
 perro_1.hacer_sonido()

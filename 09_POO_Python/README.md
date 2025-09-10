@@ -256,9 +256,9 @@ class Persona:
 
 ---
 
-## 📌 7. Polimorfismo
+
 > **Definición:**
-> - El **Polimorfismo** permite que objetos de diferentes clases respondan de forma distinta a la **misma llamada de método o función**. Esto promueve la flexibilidad, mantenibilidad y reutilización del código.
+> - El **Polimorfismo** permite que objetos de diferentes clases respondan de forma distinta a la **misma llamada de método o función**. Esto promueve la flexibilidad, mantenibilidad y reutilización del código. En otras palabras, es múltiples comportamiento en distintas clases.
 
 ###  🔹 Conceptos Clave en Polimorfismo
 
@@ -267,3 +267,29 @@ class Persona:
 | **Polimorfismo**               | Capacidad de que una misma interfaz (método, función u operador) se comporte de forma distinta según la clase del objeto que lo utiliza. ||
 | **Duck Typing**                | En Python, si un objeto tiene el método esperado, se considera compatible sin importar su tipo concreto. |
 | **Polimorfismo con Operadores** | Operadores como `+`, `len()` u otros métodos mágicos (`__add__`, etc.) pueden comportarse diferente según el tipo de objeto. |
+
+---
+
+## 📌 8. Clase Object
+> **Definicion:**
+> - En Python, todo está basado en objetos. Las **clases** derivan de una clase base llamada `object`, que define una serie de **métodos especiales** (también conocidos como *dunder methods*).
+> - Los **objetos** son la **abstracción** de datos en Python. **Todo dato en un programa Python es un objeto**.
+> - La clase `object` actúa como una **superclase** de todas las clases y provee implementaciones predeterminadas de diversos métodos especiales.
+
+###  🔹 Métodos Especiales más comunes
+
+| Método Especial     | Propósito                                               | Comportamiento Predeterminado / Uso                   |
+|--------------------|----------------------------------------------------------|--------------------------------------------------------|
+| `__init__(self…)`  | Inicializa atributos de instancia                         | Llamado automáticamente al crear una instancia |
+| `__str__(self)`    | Representación amigable para el usuario (print, str)      | Si no se define, usa `__repr__()` |
+| `__repr__(self)`   | Representación “oficial” para desarrolladores (repr)      | Si no se define, muestra `<__main__.Class object at 0x...>` |
+| `__eq__(self, other)` | Define la igualdad (`==`) entre objetos                | Por defecto compara identidad (`is`) |
+| Otros (por ejemplo: `__add__`, `__len__`, `__hash__`, etc.) | Permiten sobrecargar operadores y funciones integradas | Python provee comportamientos predeterminados, pero se pueden personalizar |
+
+**¿Qué significa esto?**
+- Si **no defines** estos métodos especiales en una clase, Python usará las implementaciones por defecto heredadas de `object`.
+- Puedes **personalizar su comportamiento**, redefiniéndolos en tu clase. Esto te permite, por ejemplo:
+  - Controlar cómo se inicializa un objeto (`__init__`)
+  - Cambiar cómo se imprime (`__str__`, `__repr__`)
+  - Definir qué significa que dos objetos sean iguales (`__eq__`)
+  - Permitir que tu objeto use operadores como `+`, funciones como `len()`, o sea usado como clave en diccionarios (`__add__`, `__len__`, `__hash__`, etc.)
