@@ -293,3 +293,30 @@ class Persona:
   - Cambiar cómo se imprime (`__str__`, `__repr__`)
   - Definir qué significa que dos objetos sean iguales (`__eq__`)
   - Permitir que tu objeto use operadores como `+`, funciones como `len()`, o sea usado como clave en diccionarios (`__add__`, `__len__`, `__hash__`, etc.)
+
+---
+
+## 📌 9. Method Resolution Order (MRO)
+> **Definición:**
+> - El **MRO** determina en qué orden se buscan los **Métodos** y **Atributos** cuando una clase participa en **Herencia Múltiple**. Es decir, define qué clase consulta primero, después y asi sucesivamente, hasta llegar a la **Clase Universal (Class Object)**.
+
+**Ejemplo**
+
+```python
+class FiguraGeometrica:
+    def descripcion(self):
+        return "Soy una figura geométrica"
+
+class Color:
+    def descripcion(self):
+        return "Tengo un color"
+
+class Cuadrado(FiguraGeometrica, Color):
+    pass
+
+print(Cuadrado.mro())
+
+Impresión por Consola: [<class '__main__.Cuadrado'>, <class '__main__.FiguraGeometrica'>, <class '__main__.Color'>, <class 'object'>]
+```
+
+**NOTA: Es importante el orden en que se definen las clases Padres, ya que si se inviente en la clase Cuadrado(Color, FiguraGeometrica), resolvera primero el método Cuadrado, después Color, y así sucesivamente...**
