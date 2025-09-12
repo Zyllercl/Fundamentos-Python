@@ -26,7 +26,7 @@ class Teclado(DispositivoEntrada):
 
     # Modificación del Método STR
     def __str__(self):
-        mensaje = f'ID: {self.contador_teclados} - Marca: {self.marca} - Tipo entrada: {self.tipo_entrada}'
+        mensaje = f'ID: {self.id_teclado} - Marca: {self.marca} - Tipo entrada: {self.tipo_entrada}'
 
         return mensaje
 

@@ -24,7 +24,7 @@ class Monitor:
 
     # Modificación del Método STR
     def __str__(self):
-        mensaje = f'ID: {self.contador_monitores} - Marca: {self.marca} - Tamaño: {self.tamano}'
+        mensaje = f'ID: {self.id_monitor} - Marca: {self.marca} - Tamaño: {self.tamano}'
 
         return mensaje
 

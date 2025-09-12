@@ -1,7 +1,4 @@
 from computador import Computador
-from teclado import Teclado
-from monitor import Monitor
-from mouse import Mouse
 
 # ----------------------
 # Creación de Clase
@@ -17,10 +14,12 @@ class Orden(Computador):
     # ----------------------
     def __init__(self, computadores):
         # Aumento del contador
-        self.id_orden = Orden.contador_ordenes
+        Orden.contador_ordenes +=1
+
         # ----------------------
         # Atributos de Instancia
         # ----------------------
+        self.id_orden = Orden.contador_ordenes
         self.computadores = computadores
     
     def __str__(self):
@@ -29,7 +28,7 @@ class Orden(Computador):
         for computador in self.computadores:
             mensaje += '\n' + computador.__str__()
         
-        f'''ORDEN N°: {self.id_orden}
+        return f'''N° ORDEN: {self.id_orden}
         Computador: {mensaje}
         '''
     
