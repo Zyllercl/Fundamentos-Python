@@ -1,5 +1,11 @@
 from cuadrado import Cuadrado
 from rectangulo import Rectangulo
+from figura_geometrica import FiguraGeometrica
+
+# -----------------------------
+# Probando creación de una FiguraGeometrica
+# -----------------------------
+# figura = FiguraGeometrica() # Esto genera un ERROR ya que no se puede instanciar una clase de tipo abstracta.
 
 # -----------------------------
 # Probando Ejercicio Cuadrado

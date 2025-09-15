@@ -320,3 +320,54 @@ Impresión por Consola: [<class '__main__.Cuadrado'>, <class '__main__.FiguraGeo
 ```
 
 **NOTA: Es importante el orden en que se definen las clases Padres, ya que si se inviente en la clase Cuadrado(Color, FiguraGeometrica), resolvera primero el método Cuadrado, después Color, y así sucesivamente...**
+
+---
+
+## 📌 10. Clases Abstractas en Python
+> **Definición:**
+> - En Python, una **clase abstracta** es una clase que sirve como plantilla para otras clases, pero que **no puede ser instanciada directamente**
+> - Una clase se considera abstacta cuando contiene **uno o más métodos abstractos**, es decir, métodos declarados pero sin implementación. 
+> - Las clases hijas que heredan de una clase abstracta están **obligadas a implementar** esos métodos.
+
+**Ejemplo**
+- Se tomara cómo ejemplo el **Ejercicio de Herencia Multiple**
+
+```python
+from abc import ABC, abstractmethod
+
+# Clase Abstracta
+class FiguraGeometrica(ABC):
+
+    @abstractmethod
+    def area(self):
+        """Método abstracto que obliga a las clases hijas a implementarlo"""
+        pass
+
+# Clases Hijas
+class Cuadrado(FiguraGeometrica):
+    def __init__(self, lado):
+        self.lado = lado
+
+    def area(self):
+        return self.lado * self.lado
+
+class Rectangulo(FiguraGeometrica):
+    def __init__(self, base, altura):
+        self.base = base
+        self.altura = altura
+
+    def area(self):
+        return self.base * self.altura
+
+
+# 🚨 Esto generará un error:
+# figura = FiguraGeometrica()
+
+# ✅ Esto sí funciona:
+cuadrado = Cuadrado(4)
+print("Área del Cuadrado:", cuadrado.area())
+
+rectangulo = Rectangulo(3, 5)
+print("Área del Rectángulo:", rectangulo.area())
+
+```

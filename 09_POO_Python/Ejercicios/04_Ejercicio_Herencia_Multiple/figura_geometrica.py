@@ -1,13 +1,16 @@
 """
 Ejercicio de Herencia Multiple en Python
 ========================================
-Este script muestra un ejemplo de como abordar la Herencia Multiple, para ello en este archivo se creará la Clase Padre y posteriormente se crearan las Clases Hijas que tomaran los atributos y método de la Clase Padre
+Este script muestra un ejemplo de como abordar la Herencia Multiple, para ello en este archivo se creará la Clase Padre y posteriormente se crearan las Clases Hijas que tomaran los atributos y método de la Clase Padre.
+
+Se modificó la Clase FiguraGeometrica a una Clase Abstracta (Revisar definición en el README.md)
 """
+from abc import ABC, abstractmethod
 
 # -----------------------------
 # Creación de la Clase
 # -----------------------------
-class FiguraGeometrica:
+class FiguraGeometrica(ABC):
     # -----------------------------
     # Constructor
     # -----------------------------
@@ -51,6 +54,14 @@ class FiguraGeometrica:
             self._alto = nuevo_alto
         else:
             print(f'[ERROR] Valor erroneo nuevo_alto: {nuevo_alto}')
+    
+    # -----------------------------
+    # Declaración Método Abstracto
+    # -----------------------------
+    @abstractmethod
+    def calcular_area(self):
+        # No se agrega ninguna implementación debido a que las clases hijas heredarán esta clase.
+        pass
 
     def __str__(self):
         return f'[FiguraGeometrica] Ancho: {self._ancho} - Alto: {self.alto}'
