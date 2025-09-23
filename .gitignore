@@ -1,5 +1,6 @@
 
 # No permite subir el .env a GitHub
 .env
+*.txt
 
 __pycache__/
